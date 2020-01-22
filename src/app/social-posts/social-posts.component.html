@@ -1,0 +1,10 @@
+<h2>My Thoughts</h2>
+<div class="main">
+  <button class="newThought" type="button">New Thought</button>
+  <ul>
+    <app-post *ngFor="let post of posts" [post]='post'>
+      {{ post.title }} {{ post.thoughts }}
+    </app-post>
+
+  </ul>
+</div>
